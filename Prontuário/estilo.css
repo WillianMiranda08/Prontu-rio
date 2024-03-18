@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --principal-azul: #C0D6DF;
+    --principal-verde: #C8DFBD;
+    --principal-cinza: #f2f2f2;
+    --fonte-cinza: #343843;
+    --hover-cinza: #f8f8f8;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--fonte-cinza);
+    display: flex;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 7%;
+    background-color: var(--principal-azul);
+}
+
+.icon {
+    margin: 1rem;
+}
+
+h1#titulo {
+    font-size: 1.75rem;
+    margin: 1rem auto 0 1.5rem;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main h1 {
+    font-size: 1.25rem;
+    margin: 0 0 0 0.2rem;
+}
+
+#prontuario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+
+}
+
+label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+label p {
+    margin: 0 0 0.5rem 0.2rem;
+}
+
+input, select, textarea, option {
+    padding: 0.5rem;
+    border-radius: 7px;
+    appearance: none;
+    border: none;
+    outline: none;
+    transition: background 0.1s ease-in-out;
+}
+
+input:hover, select:hover, textarea:hover, option:hover {
+    background-color: var(--hover-cinza);
+}
+
+input:focus, select:focus, textarea:focus, option:focus {
+    background-color: var(--hover-cinza);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+.main {
+    width: 100%;
+    background-color: var(--principal-cinza);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.101);
+}
+
+.main.fundo {
+    margin-top: 2rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container.metade {
+    width: 100%;
+}
+
+
+.metade {
+    width: 49.5%;
+}
+
+.dois-terços {
+    width: 66%;
+}
+
+.um-terço {
+    width: 33%;
+}
